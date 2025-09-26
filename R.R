@@ -1,0 +1,22 @@
+install.packages("readxl")
+library(readxl)
+
+setwd("C:\\Users\\rehim\\OneDrive\\Desktop\\R-Giris-Seviyesi-Egitimi-main")
+
+cow <- read.csv("cow_all_genes.csv")
+
+dog<-read_xlsx("dog.xlsx")
+chimpanze<-read.delim("chimpanze_all_gene.txt")
+dog_list<- as.list(dog)
+kib<-read_xlsx("C:\\Users\\rehim\\OneDrive\\Documents\\Kibertəhlükəsizlik Tarixinin Xronologiyası.xlsx")
+dog_matrix<-as.matrix(dog)
+a<-(1:10)
+class(dog$`Canis lupus`)
+class(dog_matrix)
+x<-(1:99)
+y<-c("salam","saqol","nbr")
+z<-(1:7)
+new_data<- data.frame(x,y)
+class(new_data$y)
+class(new_data$x)
+new_data_matrix<-matrix(x,z)
